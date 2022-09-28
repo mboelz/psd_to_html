@@ -5,7 +5,15 @@
 }
 
 /*************** Header Anfang *****************/
-header {
+.hero-section {
+  padding: 30px 0px 40px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.hero-section li {
+  list-style: none;
+  display: inline-block;
 }
 
 nav {
@@ -16,12 +24,77 @@ nav {
 }
 
 /*************** Header Ende *****************/
+body {
+  height: 20vh;
+  font-family: sans-serif;
+  display: flex;
+  /* align-items: flex-start; */ 
+}
 
+section {
+  width: 90%;
+  height: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* align-items: flex-start; */
+  background-color: lightgray;
+}
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0 0 20px 0;
+}
+h4 {
+  font-weight: 600;
+  margin: 0 0 20px 0;
+}
+h5 {
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+p {
+  text-align: center;
+  margin-top: 10px;
+}
+.icon {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
 #our_story-section {
 }
 #watch-section {
 }
+.expertise-container {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  column-gap: 30px;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  background-color: lightblue;
+  padding: 20px;
+
+}
 #expertise-section {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  column-gap: 30px;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  background-color: lightgoldenrodyellow;
 }
 #team-section {
 }
