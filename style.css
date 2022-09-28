@@ -1,8 +1,27 @@
+/*************** Allgemeines Anfang *****************/
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+h2 {
+  text-transform: uppercase;
+}
+
+p,
+li,
+a,
+input,
+textarea {
+  font-family: sans-serif;
+}
+section {
+  padding: 50px 0;
+}
+
+/*************** Allgemeines Ende *****************/
 
 /*************** Header Anfang *****************/
 header {
@@ -25,7 +44,33 @@ nav {
 }
 #team-section {
 }
-#contact_client-section {
+
+/*************** Contact Client Anfang *****************/
+#contact_client-section > .container {
+  max-width: 1400px;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
 }
+#contact_client-section > .container > div {
+  /* width: 50%; */
+}
+#contact_client-section form {
+  display: flex;
+  flex-direction: column;
+}
+
+#contact_client-section .clients > div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  align-items: center;
+}
+
+#contact_client-section img {
+  max-width: 100px;
+}
+
+/*************** Contact Client Ende *****************/
 footer {
 }
