@@ -52,14 +52,13 @@ nav {
     color: white;
 }
 
-<<<<<<< HEAD
 /*************** Contact Client Anfang *****************/
 #contact_client-section > .container {
   max-width: 1400px;
   margin: auto;
   display: flex;
   justify-content: space-evenly;
-=======
+
 #team-section h2 {
     padding-top: 70px;
     padding-bottom: 5px;
@@ -124,8 +123,15 @@ hr {
     padding: 12px;
 }
 
+
 #contact_client-section {
->>>>>>> 63fe34649665bc94b9ca815b9dc7d40e963e7ebf
+
+/*************** Contact Client Anfang *****************/
+#contact_client-section > .container {
+  max-width: 1400px;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
 }
 #contact_client-section > .container > div {
   /* width: 50%; */
