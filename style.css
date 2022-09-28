@@ -1,9 +1,9 @@
 /*************** Allgemeines Anfang *****************/
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 h2 {
@@ -18,7 +18,7 @@ textarea {
   font-family: sans-serif;
 }
 section {
-  padding: 50px 0;
+  padding: 70px 0;
 }
 
 /*************** Allgemeines Ende *****************/
@@ -28,7 +28,7 @@ header {
 }
 
 nav {
-    color: red;
+  color: red;
 }
 
 #hero-section {
@@ -43,113 +43,137 @@ nav {
 #expertise-section {
 }
 #team-section {
-    background-image: url("img/bgk-header.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 650px;
-    text-align: center;
-    color: white;
+  background-image: url("img/bgk-header.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 650px;
+  text-align: center;
+  color: white;
 }
 
-/*************** Contact Client Anfang *****************/
-#contact_client-section > .container {
-  max-width: 1400px;
-  margin: auto;
-  display: flex;
-  justify-content: space-evenly;
-
 #team-section h2 {
-    padding-top: 70px;
-    padding-bottom: 5px;
-    font-family: "Courier New";
+  padding-top: 70px;
+  padding-bottom: 5px;
+  font-family: "Courier New";
 }
 
 #team-section #first-p {
-    padding-bottom: 12px;
-    font-size: 20px;
-    font-weight: thin;
+  padding-bottom: 12px;
+  font-size: 20px;
+  font-weight: thin;
 }
 
 hr {
-    display: inline-block;
-    width: 50px;
-    size: 10px;
-    /*color: rgb(234, 53, 53);*/
-    height: 1px;
+  display: inline-block;
+  width: 50px;
+  size: 10px;
+  /*color: rgb(234, 53, 53);*/
+  height: 1px;
 }
 
 #teams {
-    font-family: verdana;
-    margin: 50px auto 50px auto;
-    width: 700px;
-    height: 210px;
-    display: flex;
-    justify-content: space-evenly;
+  font-family: verdana;
+  margin: 50px auto 50px auto;
+  width: 700px;
+  height: 210px;
+  display: flex;
+  justify-content: space-evenly;
 }
 .team {
-    border: thin solid white;
-    width: 150px;
-    height: 220px;
+  border: thin solid white;
+  width: 150px;
+  height: 220px;
 }
 .team-img {
-    width: 150px;
-    height: 145px;
-    background-color: white;
+  width: 150px;
+  height: 145px;
+  background-color: white;
 }
 
 .team-name {
-    padding-top: 15px;
-    padding-bottom: 5px;
-    font-size: 15px;
-    font-weight: normal;
+  padding-top: 15px;
+  padding-bottom: 5px;
+  font-size: 15px;
+  font-weight: normal;
 }
 .team-job {
-    color: gray;
+  color: gray;
 }
 
 #team-section #last-p {
-    padding-top: 15px;
-    padding-bottom: 20px;
-    font-family: verdana;
+  padding-top: 15px;
+  padding-bottom: 20px;
+  font-family: verdana;
 }
 
 #team-section button {
-    background: transparent;
-    color: aquamarine;
-    font-size: 15px;
-    font-weight: bold;
-    border-color: aquamarine;
-    padding: 12px;
+  background: transparent;
+  color: aquamarine;
+  font-size: 15px;
+  font-weight: bold;
+  border-color: aquamarine;
+  padding: 12px;
 }
-
-
-#contact_client-section {
 
 /*************** Contact Client Anfang *****************/
 #contact_client-section > .container {
-  max-width: 1400px;
+  max-width: 1200px;
   margin: auto;
   display: flex;
   justify-content: space-evenly;
 }
+#contact_client-section h2 {
+  margin-bottom: 30px;
+}
 #contact_client-section > .container > div {
-  /* width: 50%; */
+  width: 30%;
 }
 #contact_client-section form {
   display: flex;
   flex-direction: column;
 }
+#contact_client-section input,
+#contact_client-section textarea {
+  padding: 12px 15px 9px 15px;
+  margin-bottom: 18px;
+  border: 1px solid hsl(0 0% 90%);
+  border-radius: 2px;
+  color: hsl(0 0% 50%);
+  font-size: 0.9rem;
+  font-weight: 300;
+  resize: none;
+}
+#contact_client-section input:focus,
+#contact_client-section textarea:focus {
+  outline: none;
+  border-color: hsl(150 50% 50%);
+}
+#contact_client-section input[type="submit"] {
+  width: 30%;
+  background-color: unset;
+  border-color: hsl(150 50% 50%);
+  color: hsl(150 50% 50%);
+  text-transform: uppercase;
+  font-weight: 400;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#contact_client-section input[type="submit"]:hover {
+  background-color: hsl(150 50% 50%);
+  color: #fff;
+  cursor: pointer;
+}
 
 #contact_client-section .clients > div {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 30px;
+  gap: 40px;
   align-items: center;
 }
 
 #contact_client-section img {
-  max-width: 100px;
+  max-width: 150px;
 }
 
 /*************** Contact Client Ende *****************/
