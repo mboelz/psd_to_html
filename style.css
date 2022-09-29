@@ -153,9 +153,33 @@ button {
   padding: 12px;
 }
 /*---------------- Our Story Section End --------------*/
+/*---------------- Watch Anfang --------------*/
+
 #watch-section {
+  background-image: url("img/bgk-middle.png");
+  background-size: cover;
+  position: relative;
+  height: 700px;
+}
+#watch-section > div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#watch-section h3 {
+  color: #fff;
+  text-transform: uppercase;
+}
+#watch-section img {
+  display: block;
+  margin: 0 auto 40px;
+}
+#watch-section img:hover {
+  cursor: pointer;
 }
 
+/*---------------- Watch Ende --------------*/
 #expertise-section h2 {
   font-size: 2rem;
   font-weight: 600;
