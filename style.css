@@ -35,24 +35,227 @@ footer {
 /*************** Allgemeines Ende *****************/
 
 /*************** Header Anfang *****************/
+
 header {
+  background-color: azure;
+  width: 100%;
+  height: 600px;
+  background-image: url("img/bgk-header.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 10% 50%;
+  text-align: center;
+  color: white;
 }
 
 nav {
+  /*background-color: lightblue;*/
+  width: 850px;
+  margin: auto;
+  padding-top: 10px;
   color: red;
+  display: flex;
+  justify-content: space-between;
+}
+#nav-logo {
+  /*background-color: lightgreen; */
+}
+#nav-logo img {
+  width: 100px;
+}
+#nav-link {
+  /*background-color: lightcoral;*/
+  align-self: center;
+  font-size: 12px;
+  display: flex;
+  justify-content: space-evenly;
+}
+#nav-link a {
+  padding-left: 25px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+#nav-link a:hover {
+  color: aquamarine;
+}
+#nav-link a:active {
+  color: rgb(31, 210, 150);
 }
 
 #hero-section {
+  width: 700px;
+  margin: auto;
+}
+#hero-section h1 {
+  padding-top: 100px;
+  padding-bottom: 0px;
+}
+#hero-section p {
+  padding-top: 20px;
+  font-size: 11;
+  line-height: 150%;
+}
+
+#hero-section hr {
+  color: aquamarine; /* TODO color  fehler*/
+}
+
+button {
+  margin-top: 40px;
+  background: transparent;
+  color: rgb(136, 233, 201);
+  font-size: 15px;
+  border-color: rgb(136, 233, 201);
+  padding: 12px;
+  border-radius: 3px;
 }
 
 /*************** Header Ende *****************/
 
+/*************** Our Story Section *****************/
 #our_story-section {
+  width: 100%;
+
+  color: black; /*background-color: rgb(218, 139, 36); */
 }
+#story-container {
+  width: 45%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+#story-img {
+  width: 350px;
+  /* 
+    background-color: forestgreen;*/
+}
+
+#story-text {
+  width: 450px;
+
+  /*background-color: rgb(200, 38, 38);*/
+}
+#story-text h2 {
+}
+
+#story-text p {
+  font-family: verdana;
+  padding-top: 20px;
+  color: gray;
+}
+#story-text button {
+  margin-top: 30px;
+  background: transparent;
+  color: rgb(136, 233, 201);
+  font-size: 15px;
+  border-color: rgb(136, 233, 201);
+  padding: 12px;
+}
+/*---------------- Our Story Section End --------------*/
 #watch-section {
 }
-#expertise-section {
+
+#expertise-section h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0 0 20px 0;
 }
+
+#expertise-section h4 {
+  font-weight: 600;
+  margin: 0 0 20px 0;
+}
+#expertise-section h5 {
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+#expertise-section p {
+  text-align: center;
+  margin-top: 10px;
+}
+
+#expertise-section img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 74px;
+  width: auto;
+  margin: 5px;
+  padding: 10px;
+}
+
+#our_story-section {
+}
+
+#watch-section {
+}
+
+#expertise-section {
+  width: 100%;
+  text-align: center;
+  /* background-color: lightgoldenrodyellow; */
+  /* border: 2px solid rgb(242, 10, 211); */
+}
+
+#expertise-section .expertise-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 1025px;
+  flex-wrap: wrap;
+  /* background-color: lightblue; */
+  padding: 20px;
+  /* border: 2px solid green; */
+  margin: auto;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+#expertise-section .expertise {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: center;
+  max-width: 300px;
+  padding: 50px;
+  width: 400px;
+}
+
+#expertise-section .expertise:first-of-type {
+  border-bottom: 2px solid rgb(231, 231, 231);
+  border-right: 2px solid rgb(231, 231, 231);
+  /* margin: -15px; */
+}
+
+#expertise-section .expertise:nth-of-type(2) {
+  border-bottom: 2px solid rgb(231, 231, 231);
+  /* margin: -15px; */
+}
+
+#expertise-section .expertise:nth-of-type(3) {
+  border-bottom: 2px solid rgb(231, 231, 231);
+  border-left: 2px solid rgb(231, 231, 231);
+  /* margin: -15px; */
+}
+
+#expertise-section .expertise:nth-of-type(4) {
+  border-right: 2px solid rgb(231, 231, 231);
+  /* margin: -5px; */
+}
+
+#expertise-section .expertise:nth-of-type(6) {
+  border-left: 2px solid rgb(231, 231, 231);
+  /* margin: -5px; */
+}
+
+/*************** Team Anfang *****************/
+
+/*************** Team Section *****************/
+
 #team-section {
   background-image: url("img/bgk-header.png");
   background-size: cover;
@@ -64,7 +267,6 @@ nav {
 }
 
 #team-section h2 {
-  padding-top: 70px;
   padding-bottom: 5px;
   font-family: "Courier New";
 }
@@ -79,7 +281,7 @@ hr {
   display: inline-block;
   width: 50px;
   size: 10px;
-  /*color: rgb(234, 53, 53);*/
+  /* color: rgb(234, 53, 53); */
   height: 1px;
 }
 
@@ -91,11 +293,13 @@ hr {
   display: flex;
   justify-content: space-evenly;
 }
+
 .team {
-  border: thin solid white;
-  width: 150px;
+  border: 1px solid white;
+  width: 151px;
   height: 220px;
 }
+
 .team-img {
   width: 150px;
   height: 145px;
@@ -108,6 +312,7 @@ hr {
   font-size: 15px;
   font-weight: normal;
 }
+
 .team-job {
   color: gray;
 }
@@ -140,6 +345,7 @@ hr {
 #contact_client-section > .container > div {
   width: 30%;
 }
+
 #contact_client-section form {
   display: flex;
   flex-direction: column;
