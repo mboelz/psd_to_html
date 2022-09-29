@@ -18,7 +18,7 @@ textarea {
     font-family: sans-serif;
 }
 section {
-    padding: 50px 0;
+    padding: 70px 0;
 }
 
 /*************** Allgemeines Ende *****************/
@@ -221,28 +221,62 @@ hr {
 
 /*************** Contact Client Anfang *****************/
 #contact_client-section > .container {
-    max-width: 1400px;
+    max-width: 1200px;
     margin: auto;
     display: flex;
     justify-content: space-evenly;
 }
+#contact_client-section h2 {
+    margin-bottom: 30px;
+}
 #contact_client-section > .container > div {
-    /* width: 50%; */
+    width: 30%;
 }
 #contact_client-section form {
     display: flex;
     flex-direction: column;
 }
+#contact_client-section input,
+#contact_client-section textarea {
+    padding: 12px 15px 9px 15px;
+    margin-bottom: 18px;
+    border: 1px solid hsl(0 0% 90%);
+    border-radius: 2px;
+    color: hsl(0 0% 50%);
+    font-size: 0.9rem;
+    font-weight: 300;
+    resize: none;
+}
+#contact_client-section input:focus,
+#contact_client-section textarea:focus {
+    outline: none;
+    border-color: hsl(150 50% 50%);
+}
+#contact_client-section input[type="submit"] {
+    width: 30%;
+    background-color: unset;
+    border-color: hsl(150 50% 50%);
+    color: hsl(150 50% 50%);
+    text-transform: uppercase;
+    font-weight: 400;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#contact_client-section input[type="submit"]:hover {
+    background-color: hsl(150 50% 50%);
+    color: #fff;
+    cursor: pointer;
+}
 
 #contact_client-section .clients > div {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 30px;
+    gap: 40px;
     align-items: center;
 }
 
 #contact_client-section img {
-    max-width: 100px;
+    max-width: 150px;
 }
 
 /*************** Contact Client Ende *****************/
