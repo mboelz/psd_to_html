@@ -17,7 +17,18 @@ input,
 textarea {
   font-family: sans-serif;
 }
-section {
+p {
+  font-weight: 200;
+  line-height: 1.5;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+}
+section,
+footer {
   padding: 70px 0;
 }
 
@@ -138,7 +149,6 @@ hr {
   padding: 12px 15px 9px 15px;
   margin-bottom: 18px;
   border: 1px solid hsl(0 0% 90%);
-  border-radius: 2px;
   color: hsl(0 0% 50%);
   font-size: 0.9rem;
   font-weight: 300;
@@ -177,5 +187,130 @@ hr {
 }
 
 /*************** Contact Client Ende *****************/
+/*************** Footer Anfang *****************/
 footer {
+  background-image: url("img/bgk-footer.png");
+  background-size: cover;
 }
+footer h3,
+footer a {
+  text-transform: uppercase;
+}
+footer h3,
+footer p,
+footer a {
+  color: #fff;
+}
+footer > .container {
+  max-width: 1200px;
+  margin: auto;
+}
+footer > .container > .top-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+footer > .container > .top-section > div {
+  width: 80%;
+}
+footer .top-section > div > .logo {
+  height: 20px;
+}
+footer .top-section > .logo,
+footer .top-section > h3 {
+  margin-bottom: 20px;
+  align-self: end;
+}
+
+footer .location > div {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+footer .location p {
+  padding-left: 15px;
+}
+
+footer .location a {
+  display: block;
+}
+footer .location a > img {
+  padding-right: 10px;
+}
+
+footer .top-section > div:first-of-type {
+  order: 1;
+}
+footer .top-section > div:nth-of-type(2) {
+  order: 2;
+}
+footer .top-section > div:last-of-type {
+  order: 3;
+  align-self: baseline;
+}
+footer input,
+footer button {
+  padding: 15px 15px 12px 15px;
+  border: 1px solid hsl(0 0% 70%);
+  color: hsl(0 0% 70%);
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+footer input[type="email"] {
+  background: transparent;
+}
+footer input[type="email"]:focus {
+  outline: none;
+  border-color: hsl(0 0% 90%);
+}
+footer form {
+  display: flex;
+  margin-bottom: 30px;
+}
+footer button {
+  background-color: hsla(0, 0%, 70%, 0.7);
+  border-color: hsla(0, 0%, 70%, 0.7);
+  position: relative;
+  height: 45px;
+  width: 70px;
+  padding: 0;
+  margin-left: 10px;
+  transition: background-color 0.3s ease-in-out;
+}
+footer button:hover {
+  cursor: pointer;
+  background-color: hsla(0, 0%, 90%, 0.7);
+}
+footer button::before {
+  content: "";
+  display: block;
+  position: absolute;
+  inset: 0;
+  background-image: url("img/png/paper122.png");
+  background-size: 40%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+footer .socials a {
+  margin-right: 5px;
+}
+footer .socials a:last-of-type {
+  margin-right: 0;
+}
+
+footer nav,
+footer nav ul {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+footer ul {
+  width: 40%;
+}
+footer li {
+  margin-right: 10px;
+}
+
+footer nav {
+  margin-top: 50px;
+}
+/*************** Footer Ende *****************/
