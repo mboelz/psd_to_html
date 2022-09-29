@@ -7,7 +7,7 @@
 }
 
 h2 {
-  text-transform: uppercase;
+    text-transform: uppercase;
 }
 
 p,
@@ -15,34 +15,137 @@ li,
 a,
 input,
 textarea {
-  font-family: sans-serif;
+    font-family: sans-serif;
 }
 
 section {
-  padding: 50px 0;
+    padding: 70px 0;
 }
 
 /*************** Allgemeines Ende *****************/
 
 /*************** Header Anfang *****************/
-.hero-section {
-  padding: 30px 0px 40px;
-  margin-left: 50px;
-  margin-right: 50px;
-}
 
-.hero-section li {
-  list-style: none;
-  display: inline-block;
+header {
+    background-color: azure;
+    width: 100%;
+    height: 600px;
+    background-image: url("img/bgk-header.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 10% 50%;
+    text-align: center;
+    color: white;
 }
 
 nav {
-  color: red;
+    /*background-color: lightblue;*/
+    width: 850px;
+    margin: auto;
+    padding-top: 10px;
+    color: red;
+    display: flex;
+    justify-content: space-between;
+}
+#nav-logo {
+    /*background-color: lightgreen; */
+}
+#nav-logo img {
+    width: 100px;
+}
+#nav-link {
+    /*background-color: lightcoral;*/
+    align-self: center;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-evenly;
+}
+#nav-link a {
+    padding-left: 25px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+#nav-link a:hover {
+    color: aquamarine;
+}
+#nav-link a:active {
+    color: rgb(31, 210, 150);
 }
 
-#hero-section {}
+#hero-section {
+    width: 700px;
+    margin: auto;
+}
+#hero-section h1 {
+    padding-top: 100px;
+    padding-bottom: 0px;
+}
+#hero-section p {
+    padding-top: 20px;
+    font-size: 11;
+    line-height: 150%;
+}
+
+#hero-section hr {
+    color: aquamarine; /* TODO color  fehler*/
+}
+
+button {
+    margin-top: 40px;
+    background: transparent;
+    color: rgb(136, 233, 201);
+    font-size: 15px;
+    border-color: rgb(136, 233, 201);
+    padding: 12px;
+    border-radius: 3px;
+}
 
 /*************** Header Ende *****************/
+
+/*************** Our Story Section *****************/
+#our_story-section {
+    width: 100%;
+
+    color: black; /*background-color: rgb(218, 139, 36); */
+}
+#story-container {
+    width: 45%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+#story-img {
+    width: 350px;
+    /* 
+    background-color: forestgreen;*/
+}
+
+#story-text {
+    width: 450px;
+
+    /*background-color: rgb(200, 38, 38);*/
+}
+#story-text h2 {
+}
+
+#story-text p {
+    font-family: verdana;
+    padding-top: 20px;
+    color: gray;
+}
+#story-text button {
+    margin-top: 30px;
+    background: transparent;
+    color: rgb(136, 233, 201);
+    font-size: 15px;
+    border-color: rgb(136, 233, 201);
+    padding: 12px;
+}
+/*---------------- Our Story Section End --------------*/
+#watch-section {
+
+}
 
 #expertise-section h2 {
   font-size: 2rem;
@@ -54,7 +157,6 @@ nav {
   font-weight: 600;
   margin: 0 0 20px 0;
 }
-
 #expertise-section h5 {
   text-align: center;
   text-transform: uppercase;
@@ -144,6 +246,9 @@ nav {
 
 /*************** Team Anfang *****************/
 
+
+/*************** Team Section *****************/
+
 #team-section {
   background-image: url("img/bgk-header.png");
   background-size: cover;
@@ -155,9 +260,8 @@ nav {
 }
 
 #team-section h2 {
-  padding-top: 70px;
-  padding-bottom: 5px;
-  font-family: "Courier New";
+    padding-bottom: 5px;
+    font-family: "Courier New";
 }
 
 #team-section #first-p {
@@ -184,9 +288,9 @@ hr {
 }
 
 .team {
-  border: thin solid white;
-  width: 150px;
-  height: 220px;
+    border: 1px solid white;
+    width: 151px;
+    height: 220px;
 }
 
 .team-img {
@@ -222,32 +326,64 @@ hr {
 }
 
 /*************** Contact Client Anfang *****************/
-#contact_client-section>.container {
-  max-width: 1400px;
-  margin: auto;
-  display: flex;
-  justify-content: space-evenly;
-
+#contact_client-section > .container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
 }
-
-#contact_client-section>.container>div {
-  /* width: 50%; */
+#contact_client-section h2 {
+    margin-bottom: 30px;
+}
+#contact_client-section > .container > div {
+    width: 30%;
 }
 
 #contact_client-section form {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
+}
+#contact_client-section input,
+#contact_client-section textarea {
+    padding: 12px 15px 9px 15px;
+    margin-bottom: 18px;
+    border: 1px solid hsl(0 0% 90%);
+    border-radius: 2px;
+    color: hsl(0 0% 50%);
+    font-size: 0.9rem;
+    font-weight: 300;
+    resize: none;
+}
+#contact_client-section input:focus,
+#contact_client-section textarea:focus {
+    outline: none;
+    border-color: hsl(150 50% 50%);
+}
+#contact_client-section input[type="submit"] {
+    width: 30%;
+    background-color: unset;
+    border-color: hsl(150 50% 50%);
+    color: hsl(150 50% 50%);
+    text-transform: uppercase;
+    font-weight: 400;
+    transition: background-color 0.3s ease-in-out;
 }
 
-#contact_client-section .clients>div {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 30px;
-  align-items: center;
+#contact_client-section input[type="submit"]:hover {
+    background-color: hsl(150 50% 50%);
+    color: #fff;
+    cursor: pointer;
+}
+
+#contact_client-section .clients > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
 }
 
 #contact_client-section img {
-  max-width: 100px;
+    max-width: 150px;
 }
 
 /*************** Contact Client Ende *****************/
