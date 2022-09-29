@@ -25,13 +25,78 @@ section {
 
 /*************** Header Anfang *****************/
 header {
+    background-color: azure;
+    width: 100%;
+    height: 600px;
+    background-image: url("img/bgk-header.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 10% 50%;
+    text-align: center;
+    color: white;
 }
 
 nav {
+    /*background-color: lightblue;*/
+    width: 850px;
+    margin: auto;
+    padding-top: 10px;
     color: red;
+    display: flex;
+    justify-content: space-between;
+}
+#nav-logo {
+    /*background-color: lightgreen; */
+}
+#nav-logo img {
+    width: 100px;
+}
+#nav-link {
+    /*background-color: lightcoral;*/
+    align-self: center;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-evenly;
+}
+#nav-link a {
+    padding-left: 25px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+#nav-link a:hover {
+    color: aquamarine;
+}
+#nav-link a:active {
+    color: rgb(31, 210, 150);
 }
 
 #hero-section {
+    width: 700px;
+    margin: auto;
+}
+#hero-section h1 {
+    padding-top: 100px;
+    padding-bottom: 0px;
+}
+#hero-section p {
+    padding-top: 20px;
+    font-size: 11;
+    line-height: 150%;
+}
+
+#hero-section hr {
+    color: aquamarine; /* TODO color  fehler*/
+}
+
+button {
+    margin-top: 40px;
+    background: transparent;
+    color: rgb(136, 233, 201);
+    font-size: 15px;
+    border-color: rgb(136, 233, 201);
+    padding: 12px;
+    border-radius: 3px;
 }
 
 /*************** Header Ende *****************/
