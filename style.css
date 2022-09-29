@@ -7,7 +7,7 @@
 }
 
 h2 {
-  text-transform: uppercase;
+    text-transform: uppercase;
 }
 
 p,
@@ -15,10 +15,10 @@ li,
 a,
 input,
 textarea {
-  font-family: sans-serif;
+    font-family: sans-serif;
 }
 section {
-  padding: 50px 0;
+    padding: 50px 0;
 }
 
 /*************** Allgemeines Ende *****************/
@@ -36,12 +36,51 @@ nav {
 
 /*************** Header Ende *****************/
 
+/*************** Our Story Section *****************/
 #our_story-section {
+    width: 100%;
+
+    color: black; /*background-color: rgb(218, 139, 36); */
 }
+#story-container {
+    width: 45%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+#story-img {
+    width: 350px;
+    /* 
+    background-color: forestgreen;*/
+}
+
+#story-text {
+    width: 450px;
+
+    /*background-color: rgb(200, 38, 38);*/
+}
+#story-text h2 {
+}
+
+#story-text p {
+    font-family: verdana;
+    padding-top: 20px;
+    color: gray;
+}
+#story-text button {
+    margin-top: 30px;
+    background: transparent;
+    color: rgb(136, 233, 201);
+    font-size: 15px;
+    border-color: rgb(136, 233, 201);
+    padding: 12px;
+}
+/*---------------- Our Story Section End --------------*/
 #watch-section {
 }
 #expertise-section {
 }
+/*************** Team Section *****************/
 #team-section {
     background-image: url("img/bgk-header.png");
     background-size: cover;
@@ -53,7 +92,6 @@ nav {
 }
 
 #team-section h2 {
-    padding-top: 70px;
     padding-bottom: 5px;
     font-family: "Courier New";
 }
@@ -81,8 +119,8 @@ hr {
     justify-content: space-evenly;
 }
 .team {
-    border: thin solid white;
-    width: 150px;
+    border: 1px solid white;
+    width: 151px;
     height: 220px;
 }
 .team-img {
@@ -118,29 +156,28 @@ hr {
 
 /*************** Contact Client Anfang *****************/
 #contact_client-section > .container {
-  max-width: 1400px;
-  margin: auto;
-  display: flex;
-  justify-content: space-evenly;
-
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
 }
 #contact_client-section > .container > div {
-  /* width: 50%; */
+    /* width: 50%; */
 }
 #contact_client-section form {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 #contact_client-section .clients > div {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 30px;
-  align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: center;
 }
 
 #contact_client-section img {
-  max-width: 100px;
+    max-width: 100px;
 }
 
 /*************** Contact Client Ende *****************/
