@@ -41,7 +41,7 @@ nav {
     width: 850px;
     margin: auto;
     padding-top: 10px;
-    color: red;
+
     display: flex;
     justify-content: space-between;
 }
@@ -87,6 +87,14 @@ nav {
 
 #hero-section hr {
     color: aquamarine; /* TODO color  fehler*/
+    background-color: red;
+    background: ;
+}
+
+#hr-ligne {
+    width: 50px;
+
+    border-top: 1px solid aquamarine;
 }
 
 button {
