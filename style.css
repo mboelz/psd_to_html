@@ -402,6 +402,7 @@ hr {
   font-size: 0.9rem;
   font-weight: 300;
   resize: none;
+  border-radius: 3px;
 }
 #contact_client-section input:focus,
 #contact_client-section textarea:focus {
